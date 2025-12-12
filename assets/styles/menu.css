@@ -1,0 +1,47 @@
+/* HIDE TOGGLE ON DESKTOP */
+.menu-toggle {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* MOBILE NAVBAR */
+@media (max-width: 768px) {
+
+    /* Show toggle button */
+    .menu-toggle {
+        display: block;
+        padding: 10px 20px;
+        color: #7cf03d;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    /* Default: hide menu */
+    .navbar ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1f242d;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        border-top: 2px solid #7cf03d;
+        display: none;
+    }
+
+    /* When toggled */
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li a {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+}
