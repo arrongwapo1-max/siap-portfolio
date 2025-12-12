@@ -1,0 +1,146 @@
+#Projects {
+   
+    height: 100vh;
+    padding: 60px 10% 0;
+    color: #fff;
+    height: 110vh;
+    text-align: center;
+    
+}
+
+.project-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+.project-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.project-section p {
+    font-size: 1.1em;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+.project-box {
+    border: 2px solid lime;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px lime;
+}
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project-images img {
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid lime;
+}
+.project-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.project-desc {
+    max-width: 800px;
+    margin: 10px auto 20px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #ddd;
+}
+.learn-more-btn {
+    background: linear-gradient(90deg, #00ff00, #00cc00);
+    color: black;
+    padding: 12px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ff00;
+    transition: 0.3s;
+}
+.learn-more-btn:hover {
+    background: linear-gradient(90deg, #00cc00, #009900);
+    box-shadow: 0 0 20px #00ff00;
+}
+
+.project  {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.project h4 {
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Adjust main Projects section */
+    #Projects {
+        height: auto;           /* allow content to expand naturally */
+        padding: 40px 5% 60px;
+    }
+
+    .project-section {
+        padding: 20px 10px;
+    }
+
+    .project-section h1 {
+        font-size: 1.8em;
+    }
+
+    .project-section p {
+        font-size: 0.95em;
+        max-width: 90%;
+    }
+
+    /* Project box becomes smaller and centered */
+    .project-box {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    /* Project images resize and align properly */
+    .project-images {
+        gap: 15px;
+    }
+
+    .project-images img {
+        width: 85%;              /* much smaller for tablet */
+        max-width: 350px;        /* keeps beautiful size */
+        border-radius: 10px;
+    }
+
+    .project-title {
+        font-size: 1.1em;
+    }
+
+    .project-desc {
+        font-size: 0.9em;
+        max-width: 90%;
+    }
+
+    /* Button size adjustment */
+    .learn-more-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+        border-radius: 20px;
+    }
+
+    /* Additional project text */
+    .project {
+        font-size: 16px;
+    }
+
+    .project h4 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+}
